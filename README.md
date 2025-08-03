@@ -41,5 +41,5 @@ Includes **autocomplete city search**, dark mode styling, and data export.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/weather.git
+git clone https://github.com/ahmedrafat23/weather.git
 cd weather
