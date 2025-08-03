@@ -22,8 +22,7 @@ Includes **autocomplete city search**, dark mode styling, and data export.
 ---
 
 ## 📸 Demo
-
-![Demo Screenshot](https://your-screenshot-url-if-you-have-one.com)
+<img width="1024" height="1024" alt="ChatGPT Image Aug 3, 2025, 12_20_15 PM" src="https://github.com/user-attachments/assets/a18e63ad-09ea-4c1f-a588-be869d61a5c7" />
 
 ---
 
