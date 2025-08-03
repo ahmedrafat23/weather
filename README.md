@@ -37,6 +37,5 @@ No API key required!
 ### 1. Clone the project
 
 ```bash
-git clone https://github.com/yourusername/flask-weather-dashboard.git
+git clone https://github.com/ahmedrafat23/weather.git
 cd flask-weather-dashboard
-
