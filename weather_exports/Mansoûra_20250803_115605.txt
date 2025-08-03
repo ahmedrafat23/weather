@@ -1,0 +1,4 @@
+City: Mansoûra, Algeria
+DateTime: 2025-08-03 11:56:05
+Temperature: 28.6 °C
+Weather: 🌤️ Mainly Clear
