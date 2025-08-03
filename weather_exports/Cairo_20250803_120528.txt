@@ -1,0 +1,4 @@
+City: Cairo, Egypt
+DateTime: 2025-08-03 12:05:28
+Temperature: 31.2 °C
+Weather: 🌤️ Mainly Clear

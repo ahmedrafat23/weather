@@ -27,13 +27,38 @@
             display: inline-block;
             margin-top: 20px;
         }
+
+        #suggestions {
+            width: 320px;
+            margin: auto;
+            background-color: #2a2a2a;
+            position: absolute;
+            z-index: 1000;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        #suggestions li {
+            padding: 8px;
+            color: white;
+            border-bottom: 1px solid #444;
+            cursor: pointer;
+        }
+
+        #suggestions li:hover {
+            background-color: #3a3a3a;
+        }
     </style>
 </head>
 
 <body>
     <h1>🌤️ Weather Dashboard</h1>
-    <form method="post">
-        <input type="text" name="city" placeholder="Enter city name" required>
+    <form method="post" autocomplete="off">
+        <input type="text" id="city" name="city" placeholder="Enter city name" required>
+        <ul id="suggestions"></ul>
         <button type="submit">Get Weather</button>
     </form>
 
@@ -49,6 +74,33 @@
     {% if error %}
     <p style="color: red;">{{ error }}</p>
     {% endif %}
+
+    <script>
+        const input = document.getElementById('city');
+        const suggestionBox = document.getElementById('suggestions');
+
+        input.addEventListener('input', async function () {
+            const q = input.value.trim();
+            if (q.length < 1) {
+                suggestionBox.innerHTML = '';
+                return;
+            }
+
+            const res = await fetch(`/autocomplete?q=${q}`);
+            const suggestions = await res.json();
+
+            suggestionBox.innerHTML = '';
+            suggestions.forEach(city => {
+                const item = document.createElement('li');
+                item.textContent = city;
+                item.addEventListener('click', () => {
+                    input.value = city;
+                    suggestionBox.innerHTML = '';
+                });
+                suggestionBox.appendChild(item);
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import requests
 import datetime
 import os
@@ -81,6 +81,21 @@ def index():
         except Exception as e:
             error = str(e)
     return render_template('index.html', weather=weather, error=error)
+
+@app.route('/autocomplete')
+def autocomplete():
+    query = request.args.get('q', '')
+    if not query:
+        return jsonify([])
+    try:
+        geo_url = "https://geocoding-api.open-meteo.com/v1/search"
+        params = {'name': query, 'count': 5, 'language': 'en'}
+        response = requests.get(geo_url, params=params)
+        results = response.json().get('results', [])
+        suggestions = [f"{r['name']}, {r['country']}" for r in results]
+        return jsonify(suggestions)
+    except:
+        return jsonify([])
 
 if __name__ == '__main__':
     app.run(debug=True)
