@@ -2,26 +2,28 @@
 
 # 🌤️ Flask Weather Dashboard
 
-A clean, browser-based weather app built with **Python Flask** and the **Open-Meteo API**.  
-Users can enter a city name to get **current weather conditions**, including temperature and description, with emoji support.  
-No API key required!
+A modern, browser-based weather app built with **Python Flask** and the **Open-Meteo API**.  
+Users can type a city name and receive **real-time weather conditions**, complete with emoji-based descriptions.  
+Includes **autocomplete city search**, dark mode styling, and data export.  
+✅ No API key required.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Search by city name
-- 🌍 Free and open-source APIs (no keys needed)
-- 🌤️ Real-time weather with emoji-based descriptions
+- 🔍 **Autocomplete City Search** – suggestions appear as you type
+- 🌤️ Real-time weather data (temperature + weather code)
+- 🌐 Based on [Open-Meteo](https://open-meteo.com/) APIs (completely free)
 - 🕒 Displays local date and time
-- 💾 Exports data to `.json` and `.txt` format
-- 🧪 Easy to expand with forecast, air quality, and charts
+- 💾 Exports data to `.json` and `.txt` files
+- 🎨 Dark mode interface
+- 🔧 Easy to expand with forecasts, air quality, or charts
 
 ---
 
 ## 📸 Demo
 
-![Screenshot](https://your-screenshot-link-if-any.com)
+![Demo Screenshot](https://your-screenshot-url-if-you-have-one.com)
 
 ---
 
@@ -31,13 +33,14 @@ No API key required!
 - [Flask](https://flask.palletsprojects.com/)
 - [Open-Meteo Weather API](https://open-meteo.com/)
 - [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
+- HTML, CSS, JavaScript (for autocomplete UI)
 
 ---
 
 ## 📦 Setup Instructions
 
-### 1. Clone the project
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ahmedrafat23/weather.git
+git clone https://github.com/yourusername/weather.git
 cd flask-weather-dashboard
