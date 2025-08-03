@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="ChatGPT Image Aug 3, 2025, 12_03_04 PM" src="https://github.com/user-attachments/assets/109e9701-3a8b-4611-b84b-733e2f3fda89" />
+
 # 🌤️ Flask Weather Dashboard
 
 A clean, browser-based weather app built with **Python Flask** and the **Open-Meteo API**.  
