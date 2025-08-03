@@ -43,4 +43,4 @@ Includes **autocomplete city search**, dark mode styling, and data export.
 
 ```bash
 git clone https://github.com/yourusername/weather.git
-cd flask-weather-dashboard
+cd weather
