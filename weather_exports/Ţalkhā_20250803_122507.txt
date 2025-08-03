@@ -1,0 +1,4 @@
+City: Ţalkhā, Egypt
+DateTime: 2025-08-03 12:25:07
+Temperature: 31.7 °C
+Weather: 🌤️ Mainly Clear

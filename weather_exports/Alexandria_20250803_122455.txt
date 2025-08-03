@@ -1,0 +1,4 @@
+City: Alexandria, Egypt
+DateTime: 2025-08-03 12:24:55
+Temperature: 29.5 °C
+Weather: 🌤️ Mainly Clear

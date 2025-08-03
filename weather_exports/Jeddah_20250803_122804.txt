@@ -1,0 +1,4 @@
+City: Jeddah, Saudi Arabia
+DateTime: 2025-08-03 12:28:04
+Temperature: 39.5 °C
+Weather: 🌤️ Mainly Clear

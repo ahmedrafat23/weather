@@ -1,0 +1,4 @@
+City: Aswān, Egypt
+DateTime: 2025-08-03 12:30:20
+Temperature: 38.7 °C
+Weather: ☀️ Clear
